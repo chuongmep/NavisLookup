@@ -45,7 +45,7 @@ You can visit to wiki and read document or access by this [link](https://github.
 
 ## Author
 
-Originally implemented by [ChuongHo](https://github.com/chuongmep) with platform **WPF** and add more feature to fit
+Originally implemented by Autodesk Team and now it maintain by [ChuongHo](https://github.com/chuongmep) with platform **WPF** and add more feature to fit
 with the progressive development of modern technology. His focus is to work smarter and achieve the most effective
 practices to enhance data utilization and digital collaboration among AEC parties.
 
