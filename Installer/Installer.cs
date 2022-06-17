@@ -35,7 +35,7 @@ var project = new Project
     {
         Manufacturer = "chuongmep",
         Comments = "Project Snoop Database In Navisworks",
-        ProductIcon = @"Installer\Resources\Icons\BIMomatic.ico"
+        ProductIcon = @"Installer\Resources\Icons\ShellIcon.ico"
     },
     Dirs = new Dir[]
     {
