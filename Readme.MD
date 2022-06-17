@@ -23,7 +23,7 @@ and maintain it to help.Easy to use by programmers for the purposes of creating 
 
 ### Some feature include:
 
-- Snoop current selection
+- Snoop Current Selection
 - Snoop Application
 - Snoop Active Document
 - Snoop Active View
