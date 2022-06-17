@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RibbonControl
+    x:Uid="UID_NavisAppInfo_RIBBON_CONTROL"
+    xmlns="clr-namespace:Autodesk.Windows;assembly=AdWindows"
+    xmlns:nvw="clr-namespace:Autodesk.Navisworks.Gui.Roamer.AIRLook;assembly=navisworks.gui.roamer"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <RibbonTab Id="ID_AppInfo_TAB" Title="AppInfo">
+        <RibbonPanel x:Uid="UID_NavisAppInfo_PANEL">
+            <RibbonPanelSource Title="AppInfo" x:Uid="UID_NaVisAppInfo_TAB_AppInfo_SOURCE">
+                <nvw:NWRibbonButton
+                    Id="ID_ButtonAppInfoApp"
+                    Orientation="Vertical"
+                    ShowText="True"
+                    Size="Large"
+                    x:Uid="UID_ButtonAppInfoApp" />
+                <nvw:NWRibbonButton
+                    Id="ID_ButtonAppInfoDoc"
+                    Orientation="Vertical"
+                    ShowText="True"
+                    Size="Large"
+                    x:Uid="UID_ButtonAppInfoDoc" />
+                <nvw:NWRibbonButton
+                    Id="ID_ButtonAppInfoActiveSheet"
+                    Orientation="Vertical"
+                    ShowText="True"
+                    Size="Large"
+                    x:Uid="UID_ButtonAppInfoActiveSheet" />
+                <nvw:NWRibbonButton
+                    Id="ID_ButtonAppInfoActiveView"
+                    Orientation="Vertical"
+                    ShowText="True"
+                    Size="Large"
+                    x:Uid="UID_ButtonAppInfoActiveView" />
+                <nvw:NWRibbonButton
+                    Id="ID_ButtonAppInfoClashTest"
+                    Orientation="Vertical"
+                    ShowText="True"
+                    Size="Large"
+                    x:Uid="UID_ButtonAppInfoClashTest" />
+                <nvw:NWRibbonButton
+                    Id="ID_ButtonAppInfoCurrentSelection"
+                    Orientation="Vertical"
+                    ShowText="True"
+                    Size="Large"
+                    x:Uid="UID_ButtonAppInfoCurrentSelection" />
+            </RibbonPanelSource>
+        </RibbonPanel>
+        <RibbonPanel x:Uid="UID_Lab_PANEL">
+            <RibbonPanelSource Title="Test" x:Uid="UID_NavisAppInfo_TAB_Test_SOURCE">
+                <nvw:NWRibbonButton
+                    Id="ID_ButtonAppInfoTest"
+                    KeyTip="X1"
+                    Orientation="Vertical"
+                    ShowText="True"
+                    Size="Large"
+                    x:Uid="UID_ButtonAppInfoTest" />
+            </RibbonPanelSource>
+        </RibbonPanel>
+    </RibbonTab>
+</RibbonControl>

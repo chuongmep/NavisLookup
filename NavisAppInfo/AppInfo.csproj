@@ -1,0 +1,112 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWpf>true</UseWpf>
+    <ImplicitUsings>true</ImplicitUsings>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <Configurations>Debug N20;Debug N21;Debug N22;Debug N23</Configurations>
+    <Configurations>$(Configurations);Release N20;Release N21;Release N22;Release N23</Configurations>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>Debug\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>Release\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('N20'))">
+    <NavisVersion>2020</NavisVersion>
+    <DefineConstants>$(DefineConstants);N20</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('N21'))">
+    <NavisVersion>2021</NavisVersion>
+    <DefineConstants>$(DefineConstants);N21</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('N22'))">
+    <NavisVersion>2022</NavisVersion>
+    <DefineConstants>$(DefineConstants);N22</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('N23'))">
+    <NavisVersion>2023</NavisVersion>
+    <DefineConstants>$(DefineConstants);N23</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Chuongmep.Navis.Api.Autodesk.Navisworks.Api" Version="$(NavisVersion).*">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="Chuongmep.Navis.Api.Autodesk.Navisworks.Clash" Version="$(NavisVersion).*">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\AppInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Remove="Debug\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Debug\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Debug\**" />
+    <None Remove=".gitignore" />
+    <None Remove="Readme.MD" />
+    <None Include="en-US\AppInfoRibbon.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\app-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\app-32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\document-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\sheet-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\document-32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\view-32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\view-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\sheet-32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\cursor-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\conflict-32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\cursor-32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\conflict-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\test-32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\test-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Remove="Debug\**" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>powershell -NoProfile -ExecutionPolicy Unrestricted $(SolutionDir)NavisAppInfo\postbuild.ps1 -Configuration '$(Configuration)' -SolutionDir '$(SolutionDir)' -ProjectDir '$(ProjectDir)' -Version '$(NavisVersion)'</PostBuildEvent>
+  </PropertyGroup>
+</Project>

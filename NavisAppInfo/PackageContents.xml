@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" Name="AppInfo" AppVersion="1.0.0.0" ProductType="Application" Author="ADSK" ProductCode="{5D6C04B0-D1AE-46E8-B32A-B7F838DFC1D6}">
+  <Components Description="Navisworks 2020 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN" SeriesMin="Nw17" SeriesMax="Nw17" />
+    <ComponentEntry AppName="AppInfo" AppType="ManagedPlugin" ModuleName="./Contents/2020/AppInfo.dll" />
+  </Components>
+  <Components Description="Navisworks 2021 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN" SeriesMin="Nw18" SeriesMax="Nw18" />
+    <ComponentEntry AppName="AppInfo" AppType="ManagedPlugin" ModuleName="./Contents/2021/AppInfo.dll" />
+  </Components>
+  <Components Description="Navisworks 2022 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN" SeriesMin="Nw19" SeriesMax="Nw19" />
+    <ComponentEntry AppName="AppInfo" AppType="ManagedPlugin" ModuleName="./Contents/2022/AppInfo.dll" />
+  </Components>
+  <Components Description="Navisworks 2023 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN" SeriesMin="Nw20" SeriesMax="Nw20" />
+    <ComponentEntry AppName="AppInfo" AppType="ManagedPlugin" ModuleName="./Contents/2023/AppInfo.dll" />
+  </Components>
+</ApplicationPackage>
