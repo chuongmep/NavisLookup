@@ -75,9 +75,13 @@ function MovePackageContent(){
 # Config Use for Debug or Release
 
 function RunDebug(){
-	KillProcessNavis
-	CopyAssembly
-	Write-Host  -ForegroundColor Green "Warning: Please Toggle To Release Mode If You Want Publish Release Version !' ＼（＾_＾）／ , config in postbuild.ps1"
+	$proc = Get-Process $AutodeskProcessName -ErrorAction SilentlyContinue
+	if($proc){
+		Write-Host "Warning : Process $AutodeskProduct  is running, please close it first to want auto copy to bundle"
+	}
+	else{
+		CopyAssembly
+	}
 }
 function RunRelease(){
 	KillProcessNavis
