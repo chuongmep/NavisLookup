@@ -1,4 +1,6 @@
 # Changelog
+- 2023-01-30 **1.0.1**
+  - Add support for Platform Navisworks Simulate, See detail at [Differences between Navisworks Manage and Navisworks Simulate](https://knowledge.autodesk.com/support/navisworks-products/troubleshooting/caas/sfdcarticles/sfdcarticles/Functionality-differences-between-Navisworks-Manage-and-Simulate.html)
 - 2022-05-17 **1.0.0**
   - First release support Navisworks 2020,2021,2022,2023
 
