@@ -123,6 +123,91 @@ namespace AppInfo
                     case SnoopType.ElementId:
                         break;
                     case SnoopType.Search:
+                        DocumentClashTests clashTests = Application.MainDocument.GetClash().TestsData;
+                        if (clashTests == null) return;
+                        if(clashTests.Tests.Count==0) return;
+                        SavedItem clashResult = null;
+                        foreach (var savedItem1 in clashTests.Tests)
+                        {
+                            var savedItem = (ClashTest) savedItem1;
+                            if (savedItem == null) continue;
+                            SavedItemCollection savedItemCollection = savedItem.Children;
+                            switch (_ViewModel.SearchType)
+                            {
+                                case NodeSearch.SearchType.ClashResultGuid:
+                                    
+                                    foreach (SavedItem item in savedItemCollection)
+                                    {
+                                        if (item == null) continue;
+                                        if (item is ClashResult)
+                                        {
+                                            ClashResult result = item as ClashResult;
+                                            if(result.Guid.ToString().ToLower() == _ViewModel.SearchValue)
+                                            {
+                                                clashResult = result;
+                                                break;
+                                            }
+                                        }
+                                        else if (item is ClashResultGroup clashResultGroup)
+                                        {
+                                            foreach (var clashResultItem in clashResultGroup.Children)
+                                            {
+                                                ClashResult resultItem = clashResultItem as ClashResult;
+                                                if(resultItem != null)
+                                                {
+                                                    if (clashResult.Guid.ToString().ToLower() == _ViewModel.SearchValue)
+                                                    {
+                                                        clashResult = resultItem;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    };
+                                    break;
+                                case NodeSearch.SearchType.ClashResultName:
+                                    foreach (SavedItem item in savedItemCollection)
+                                    {
+                                        if (item == null) continue;
+                                        if (item is ClashResult result)
+                                        {
+                                            if (result.DisplayName.ToLower() == _ViewModel.SearchValue)
+                                            {
+                                                clashResult = result;
+                                                break;
+                                            }
+                                        }
+                                        else if (item is ClashResultGroup clashResultGroup)
+                                        {
+                                            foreach (var clashResultItem in clashResultGroup.Children)
+                                            {
+                                                ClashResult resultItem = clashResultItem as ClashResult;
+                                                if (resultItem != null)
+                                                {
+                                                    if (clashResult.DisplayName.ToLower() == _ViewModel.SearchValue)
+                                                    {
+                                                        clashResult = resultItem;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    };
+                                    break;
+                                default:
+                                    clashResult = null;
+                                    break;
+                            }
+                        }
+                        if (clashResult == null)
+                        {
+                            return;
+                        }
+                        AddRootNode(clashResult.GetType(), "ClashResult", clashResult);
+                        TreeNode clashResultTree = appView.Nodes[0];
+                        DisplayNodeProperties(clashResultTree);
+                        clashResultTree.Expand();
+                        break;
                     case SnoopType.ActiveView:
                         Autodesk.Navisworks.Api.View activeView = Document.ActiveView;
                         if (activeView == null) return;

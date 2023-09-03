@@ -38,6 +38,12 @@
                     Size="Large"
                     x:Uid="UID_ButtonAppInfoClashTest" />
                 <nvw:NWRibbonButton
+                    Id="ID_ButtonAppInfoClashResultSearch"
+                    Orientation="Vertical"
+                    ShowText="True"
+                    Size="Large"
+                    x:Uid="UID_ButtonAppInfoClashResultSearch" />
+                <nvw:NWRibbonButton
                     Id="ID_ButtonAppInfoCurrentSelection"
                     Orientation="Vertical"
                     ShowText="True"

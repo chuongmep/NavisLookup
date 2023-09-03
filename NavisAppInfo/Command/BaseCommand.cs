@@ -14,7 +14,8 @@ namespace AppInfo.Command
 
         public override int Execute(params string[] parameters)
         {
-            FrmAppInfo frmAppInfo = new FrmAppInfo(new AppInfoViewModel(SnoopType));
+            AppInfoViewModel viewModel = new AppInfoViewModel(SnoopType);
+            FrmAppInfo frmAppInfo = new FrmAppInfo(viewModel);
             frmAppInfo.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             IntPtr handle = Application.Gui.MainWindow.Handle;
             new WindowInteropHelper(frmAppInfo).Owner = handle;
