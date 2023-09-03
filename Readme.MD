@@ -33,6 +33,7 @@ This is plugin use parallel with [NavisAddinManager](https://github.com/chuongme
 - Snoop Active View
 - Snoop Active Sheet
 - Snoop Clash Test
+- Snoop Clash Result with Search name and Guid
 
 ## Installation
 
