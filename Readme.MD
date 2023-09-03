@@ -19,7 +19,7 @@ and maintain it to help.Easy to use by programmers for the purposes of creating 
 
 ![](pic/AppRibbon.png)
 
-This is plugin use parallel with [NavisAddinManager](https://github.com/chuongmep/NavisAddinManager)
+This is plugin use parallel with [NavisAddinManager](https://github.com/chuongmep/NavisAddinManager) to help explore API Navisworks.
 
 ## Snoop
 
@@ -101,7 +101,7 @@ Thanks for providing a free All product IDE for this project
 ## Learning Resouces
 
 - [Navisworks Developer Center](https://www.autodesk.com/developer-network/platform-technologies/navisworks)
-- [adndevblog](https://adndevblog.typepad.com/aec/navisworks/)
+- [Adn Dev Blog](https://adndevblog.typepad.com/aec/navisworks/)
 - [Autodesk Navisworks Forum](https://forums.autodesk.com/t5/navisworks/ct-p/4)
 - [Navisworks API Docs](https://apidocs.co/apps/navisworks/2018/87317537-2911-4c08-b492-6496c82b3ed0.htm)
 - [Navisworks API Open Source](https://github.com/topics/navisworks-api)
