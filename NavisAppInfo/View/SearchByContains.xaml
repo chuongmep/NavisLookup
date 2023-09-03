@@ -1,13 +1,44 @@
 ﻿<Window
-    Height="450"
-    Title="SearchByContains"
-    Width="800"
+    Height="Auto"
+    Title="SearchBy..."
+    Width="350"
     mc:Ignorable="d"
     x:Class="AppInfo.View.SearchByContains"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="clr-namespace:AppInfo.View"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Grid />
+    <Grid Margin="5,5,5,5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" Grid.Row="0" >SnoopType:</Label>
+        <ComboBox Grid.Column="1" 
+                  Grid.Row="0"
+                  HorizontalContentAlignment="Center"
+                  VerticalContentAlignment="Center">
+            <ComboBoxItem IsSelected="True" Content="Item Guid"></ComboBoxItem>
+            <ComboBoxItem Content="Item Guid"></ComboBoxItem>
+            <ComboBoxItem Content="Clash Guid"></ComboBoxItem>
+            <ComboBoxItem Content="Clash Name"></ComboBoxItem>
+            <ComboBoxItem Content="ClashResult Name"></ComboBoxItem>
+        </ComboBox>
+        <Label Grid.Row="1" 
+               Content="Value:"
+               Grid.Column="0"/>
+        <TextBox Grid.Column="1"
+                 Grid.Row="1"
+                 />
+        <Button  
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Content="Snoop"/>
+    </Grid>
 </Window>
