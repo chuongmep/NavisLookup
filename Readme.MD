@@ -1,4 +1,4 @@
-# Navisworks App Info
+# Navisworks Lookup
 
 ![Navis API](https://img.shields.io/badge/Navisworks%20API%202023-blue.svg) ![Platform](https://img.shields.io/badge/platform-Windows-lightgray.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -19,7 +19,9 @@ and maintain it to help.Easy to use by programmers for the purposes of creating 
 
 ![](pic/AppRibbon.png)
 
-## App Info
+This is plugin use parallel with [NavisAddinManager](https://github.com/chuongmep/NavisAddinManager)
+
+## Snoop
 
 ![](pic/SnoopCurrentSlection.png)
 
@@ -36,7 +38,7 @@ and maintain it to help.Easy to use by programmers for the purposes of creating 
 
 Please follow last release at section [Release](https://github.com/chuongmep/NavisAppInfo/releases/latest)
 
-Support Navisworks Version : 2020, 2021, 2022, 2023.
+Support Navisworks Version : 2020, 2021, 2022, 2023, 2024
 ---
 
 ## Guideline
