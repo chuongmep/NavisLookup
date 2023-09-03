@@ -25,11 +25,13 @@ Global
 		Debug N21|Any CPU = Debug N21|Any CPU
 		Debug N22|Any CPU = Debug N22|Any CPU
 		Debug N23|Any CPU = Debug N23|Any CPU
+		Debug N24|Any CPU = Debug N24|Any CPU
 		Installer|Any CPU = Installer|Any CPU
 		Release N20|Any CPU = Release N20|Any CPU
 		Release N21|Any CPU = Release N21|Any CPU
 		Release N22|Any CPU = Release N22|Any CPU
 		Release N23|Any CPU = Release N23|Any CPU
+		Release N24|Any CPU = Release N24|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C2BDCC8A-50A5-4BBC-9E4A-BC2580AECBCC}.Debug N20|Any CPU.ActiveCfg = Debug N20|Any CPU
@@ -50,6 +52,10 @@ Global
 		{C2BDCC8A-50A5-4BBC-9E4A-BC2580AECBCC}.Release N22|Any CPU.Build.0 = Release N22|Any CPU
 		{C2BDCC8A-50A5-4BBC-9E4A-BC2580AECBCC}.Release N23|Any CPU.ActiveCfg = Release N23|Any CPU
 		{C2BDCC8A-50A5-4BBC-9E4A-BC2580AECBCC}.Release N23|Any CPU.Build.0 = Release N23|Any CPU
+		{C2BDCC8A-50A5-4BBC-9E4A-BC2580AECBCC}.Debug N24|Any CPU.ActiveCfg = Debug N24|Any CPU
+		{C2BDCC8A-50A5-4BBC-9E4A-BC2580AECBCC}.Debug N24|Any CPU.Build.0 = Debug N24|Any CPU
+		{C2BDCC8A-50A5-4BBC-9E4A-BC2580AECBCC}.Release N24|Any CPU.ActiveCfg = Release N24|Any CPU
+		{C2BDCC8A-50A5-4BBC-9E4A-BC2580AECBCC}.Release N24|Any CPU.Build.0 = Release N24|Any CPU
 		{1D975D70-515E-477B-9F0B-1D411980E2C2}.Debug N20|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D975D70-515E-477B-9F0B-1D411980E2C2}.Debug N21|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D975D70-515E-477B-9F0B-1D411980E2C2}.Debug N22|Any CPU.ActiveCfg = Debug|Any CPU
@@ -60,6 +66,8 @@ Global
 		{1D975D70-515E-477B-9F0B-1D411980E2C2}.Release N21|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D975D70-515E-477B-9F0B-1D411980E2C2}.Release N22|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D975D70-515E-477B-9F0B-1D411980E2C2}.Release N23|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D975D70-515E-477B-9F0B-1D411980E2C2}.Debug N24|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D975D70-515E-477B-9F0B-1D411980E2C2}.Release N24|Any CPU.ActiveCfg = Release|Any CPU
 		{150899E8-3EA7-4DBA-A18C-666ECEACA7FA}.Debug N20|Any CPU.ActiveCfg = Release|Any CPU
 		{150899E8-3EA7-4DBA-A18C-666ECEACA7FA}.Debug N21|Any CPU.ActiveCfg = Release|Any CPU
 		{150899E8-3EA7-4DBA-A18C-666ECEACA7FA}.Debug N22|Any CPU.ActiveCfg = Release|Any CPU
@@ -70,6 +78,8 @@ Global
 		{150899E8-3EA7-4DBA-A18C-666ECEACA7FA}.Release N21|Any CPU.ActiveCfg = Release|Any CPU
 		{150899E8-3EA7-4DBA-A18C-666ECEACA7FA}.Release N22|Any CPU.ActiveCfg = Release|Any CPU
 		{150899E8-3EA7-4DBA-A18C-666ECEACA7FA}.Release N23|Any CPU.ActiveCfg = Release|Any CPU
+		{150899E8-3EA7-4DBA-A18C-666ECEACA7FA}.Debug N24|Any CPU.ActiveCfg = Debug|Any CPU
+		{150899E8-3EA7-4DBA-A18C-666ECEACA7FA}.Release N24|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

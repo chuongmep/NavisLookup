@@ -7,6 +7,10 @@
     "2023": {
       "commandName": "Executable",
       "executablePath": "C:\\Program Files\\Autodesk\\Navisworks Manage 2023\\Roamer.exe"
+    },
+    "2024": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\Autodesk\\Navisworks Manage 2024\\Roamer.exe"
     }
   }
 }
