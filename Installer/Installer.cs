@@ -9,7 +9,7 @@ using WixSharp.CommonTasks;
 using WixSharp.Controls;
 
 string rootDirectory = Path.GetPathRoot(Environment.SystemDirectory);
-const string BundleName = "NavisAppInfo.bundle";
+const string BundleName = "NavisLookup.bundle";
 string installationDir = Path.Combine(rootDirectory,@"ProgramData\\Autodesk\\ApplicationPlugins",BundleName);
 const string projectName = "Navisworks Lookup";
 const string outputName = "Navis.NavisLookup";

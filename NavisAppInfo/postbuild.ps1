@@ -3,7 +3,7 @@ Write-Host "Solution Directory:" $SolutionDir
 Write-Host "Project Directory:" $ProjectDir
 Write-Host "Configuration Name Current:" $Configuration
 Write-Host "Autodesk Product Version:" $Version
-$bundle = "C:\ProgramData\Autodesk\ApplicationPlugins\NavisAppInfo.bundle\"
+$bundle = "C:\ProgramData\Autodesk\ApplicationPlugins\NavisLookup.bundle\"
 $content = "PackageContents.xml"
 $listExeclude = @("Autodesk.Navisworks.Api.dll","navisworks.gui.roamer.dll","AdWindows.dll")
 $Resouces = $bundle+"Contents\"+"$Version\"
