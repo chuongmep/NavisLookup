@@ -4,9 +4,9 @@
     xmlns="clr-namespace:Autodesk.Windows;assembly=AdWindows"
     xmlns:nvw="clr-namespace:Autodesk.Navisworks.Gui.Roamer.AIRLook;assembly=navisworks.gui.roamer"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <RibbonTab Id="ID_AppInfo_TAB" Title="AppInfo">
+    <RibbonTab Id="ID_AppInfo_TAB" Title="NavisLookup">
         <RibbonPanel x:Uid="UID_NavisAppInfo_PANEL">
-            <RibbonPanelSource Title="AppInfo" x:Uid="UID_NaVisAppInfo_TAB_AppInfo_SOURCE">
+            <RibbonPanelSource Title="NavisLookup" x:Uid="UID_NaVisAppInfo_TAB_AppInfo_SOURCE">
                 <nvw:NWRibbonButton
                     Id="ID_ButtonAppInfoApp"
                     Orientation="Vertical"

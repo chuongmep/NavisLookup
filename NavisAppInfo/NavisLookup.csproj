@@ -10,6 +10,7 @@
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <Configurations>Debug N20;Debug N21;Debug N22;Debug N23;Debug N24</Configurations>
     <Configurations>$(Configurations);Release N20;Release N21;Release N22;Release N23;Release N24</Configurations>
+    <RootNamespace>AppInfo</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>Debug\</OutputPath>

@@ -2,7 +2,7 @@ internal partial class Build
 {
     private readonly string[] Projects =
     {
-        "AppInfo"
+        "NavisLookup"
     };
 
     public const string InstallerProject = "Installer";

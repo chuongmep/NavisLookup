@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItem", "SolutionIte
 		Readme.MD = Readme.MD
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppInfo", "NavisAppInfo\AppInfo.csproj", "{C2BDCC8A-50A5-4BBC-9E4A-BC2580AECBCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavisLookup", "NavisAppInfo\NavisLookup.csproj", "{C2BDCC8A-50A5-4BBC-9E4A-BC2580AECBCC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Installer", "Installer\Installer.csproj", "{1D975D70-515E-477B-9F0B-1D411980E2C2}"
 EndProject
