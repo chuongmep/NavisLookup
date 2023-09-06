@@ -11,6 +11,8 @@
 <img src="https://img.shields.io/twitter/follow/chuongmep?style=social&logo=twitter"
 alt="follow on Twitter"></a>
 
+
+![](pic/NavisLookup.png)
 ## Summary
 
 The project supports quick lookup of results to help programmers work effectively with Navisworks. Originally this was a
