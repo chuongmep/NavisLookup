@@ -184,7 +184,7 @@ namespace AppInfo
                                                 ClashResult resultItem = clashResultItem as ClashResult;
                                                 if (resultItem != null)
                                                 {
-                                                    if (clashResult.DisplayName.ToLower() == _ViewModel.SearchValue)
+                                                    if (resultItem.DisplayName.ToLower() == _ViewModel.SearchValue)
                                                     {
                                                         clashResult = resultItem;
                                                         break;
