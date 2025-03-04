@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ApplicationPackage SchemaVersion="1.0" Name="NavisLookup" AppVersion="1.0.0.0" ProductType="Application" Author="ADSK" ProductCode="{5D6C04B0-D1AE-46E8-B32A-B7F838DFC1D6}">
-  <Components Description="Navisworks 2020 parts">
-    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw17" SeriesMax="Nw17" />
-    <ComponentEntry AppName="NavisLookup" AppType="ManagedPlugin" ModuleName="./Contents/2020/NavisLookup.dll" />
-  </Components>
   <Components Description="Navisworks 2021 parts">
     <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw18" SeriesMax="Nw18" />
     <ComponentEntry AppName="NavisLookup" AppType="ManagedPlugin" ModuleName="./Contents/2021/NavisLookup.dll" />
@@ -19,5 +15,9 @@
   <Components Description="Navisworks 2024 parts">
     <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw21" SeriesMax="Nw21" />
     <ComponentEntry AppName="NavisLookup" AppType="ManagedPlugin" ModuleName="./Contents/2024/NavisLookup.dll" />
+  </Components>
+  <Components Description="Navisworks 2025 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw22" SeriesMax="Nw22" />
+    <ComponentEntry AppName="NavisLookup" AppType="ManagedPlugin" ModuleName="./Contents/2025/NavisLookup.dll" />
   </Components>
 </ApplicationPackage>
