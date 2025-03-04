@@ -1,8 +1,8 @@
 # Navisworks Lookup
 
-![Navis API](https://img.shields.io/badge/Navisworks%20API%202023-blue.svg) ![Platform](https://img.shields.io/badge/platform-Windows-lightgray.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Navis API](https://img.shields.io/badge/Navisworks%20API%202025-blue.svg) ![Platform](https://img.shields.io/badge/platform-Windows-lightgray.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![ReSharper](https://img.shields.io/badge/ReSharper-2021.3.3-yellow) ![Rider](https://img.shields.io/badge/Rider-2021.3.3-yellow) ![Visual Studio 2022](https://img.shields.io/badge/Visual_Studio_2022_Preview_4.0-yellow) ![.NET Framework](https://img.shields.io/badge/.NET_6.0-yellow)
+![ReSharper](https://img.shields.io/badge/ReSharper-20214.3.6-yellow) ![Rider](https://img.shields.io/badge/Rider-2024.3.6-yellow) ![Visual Studio 2022](https://img.shields.io/badge/Visual_Studio_2022_Preview_4.0-yellow) ![.NET Framework](https://img.shields.io/badge/.NET_8.0-yellow)
 
 [![Publish](../../actions/workflows/Workflow.yml/badge.svg)](../../actions)
 [![Github All Releases](https://img.shields.io/github/downloads/chuongmep/NavisAppInfo/total?color=blue&label=Download)]()
@@ -41,7 +41,7 @@ This is plugin use parallel with [NavisAddinManager](https://github.com/chuongme
 
 Please follow last release at section [Release](https://github.com/chuongmep/NavisAppInfo/releases/latest)
 
-Support Navisworks Version : 2020, 2021, 2022, 2023, 2024
+Support Navisworks Version : 2021, 2022, 2023, 2024, 2025
 ---
 
 ## Guideline

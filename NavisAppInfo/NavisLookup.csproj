@@ -8,8 +8,8 @@
     <ImplicitUsings>true</ImplicitUsings>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <Configurations>Debug N20;Debug N21;Debug N22;Debug N23;Debug N24</Configurations>
-    <Configurations>$(Configurations);Release N20;Release N21;Release N22;Release N23;Release N24</Configurations>
+    <Configurations>Debug N25;Debug N21;Debug N22;Debug N23;Debug N24</Configurations>
+    <Configurations>$(Configurations);Release N25;Release N21;Release N22;Release N23;Release N24</Configurations>
     <RootNamespace>AppInfo</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -19,10 +19,6 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>Release\</OutputPath>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="$(Configuration.Contains('N20'))">
-    <NavisVersion>2020</NavisVersion>
-    <DefineConstants>$(DefineConstants);N20</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="$(Configuration.Contains('N21'))">
     <NavisVersion>2021</NavisVersion>
@@ -39,6 +35,10 @@
   <PropertyGroup Condition="$(Configuration.Contains('N24'))">
     <NavisVersion>2024</NavisVersion>
     <DefineConstants>$(DefineConstants);N24</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('N25'))">
+    <NavisVersion>2025</NavisVersion>
+    <DefineConstants>$(DefineConstants);N25</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Chuongmep.Navis.Api.Autodesk.Navisworks.Api" Version="$(NavisVersion).*">

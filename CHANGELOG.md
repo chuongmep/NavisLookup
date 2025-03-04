@@ -1,4 +1,6 @@
 # Changelog
+- 2025-03-04 **1.0.4**
+  - Add support Navisworks 2025
 - 2023-09-1 **1.0.3**
   - Fix small bug with selection clash result
 - 2023-09-03 **1.0.2**
