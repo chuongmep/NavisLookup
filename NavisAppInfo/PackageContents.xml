@@ -20,4 +20,8 @@
     <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw22" SeriesMax="Nw22" />
     <ComponentEntry AppName="NavisLookup" AppType="ManagedPlugin" ModuleName="./Contents/2025/NavisLookup.dll" />
   </Components>
+  <Components Description="Navisworks 2026 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw23" SeriesMax="Nw23" />
+    <ComponentEntry AppName="NavisLookup" AppType="ManagedPlugin" ModuleName="./Contents/2026/NavisLookup.dll" />
+  </Components>
 </ApplicationPackage>
