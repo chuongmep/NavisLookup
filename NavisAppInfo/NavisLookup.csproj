@@ -8,8 +8,8 @@
     <ImplicitUsings>true</ImplicitUsings>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <Configurations>Debug N25;Debug N21;Debug N22;Debug N23;Debug N24</Configurations>
-    <Configurations>$(Configurations);Release N25;Release N21;Release N22;Release N23;Release N24</Configurations>
+    <Configurations>Debug N26;Debug N25;Debug N21;Debug N22;Debug N23;Debug N24</Configurations>
+    <Configurations>$(Configurations);Release N26;Release N25;Release N21;Release N22;Release N23;Release N24</Configurations>
     <RootNamespace>AppInfo</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -39,6 +39,10 @@
   <PropertyGroup Condition="$(Configuration.Contains('N25'))">
     <NavisVersion>2025</NavisVersion>
     <DefineConstants>$(DefineConstants);N25</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('N26'))">
+    <NavisVersion>2026</NavisVersion>
+    <DefineConstants>$(DefineConstants);N26</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Chuongmep.Navis.Api.Autodesk.Navisworks.Api" Version="$(NavisVersion).*">
