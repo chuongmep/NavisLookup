@@ -8,8 +8,8 @@
     <ImplicitUsings>true</ImplicitUsings>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <Configurations>Debug N26;Debug N25;Debug N21;Debug N22;Debug N23;Debug N24</Configurations>
-    <Configurations>$(Configurations);Release N26;Release N25;Release N21;Release N22;Release N23;Release N24</Configurations>
+    <Configurations>Debug N27;Debug N26;Debug N25;Debug N21;Debug N22;Debug N23;Debug N24</Configurations>
+    <Configurations>$(Configurations);Release N27;Release N26;Release N25;Release N21;Release N22;Release N23;Release N24</Configurations>
     <RootNamespace>AppInfo</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -44,13 +44,25 @@
     <NavisVersion>2026</NavisVersion>
     <DefineConstants>$(DefineConstants);N26</DefineConstants>
   </PropertyGroup>
-  <ItemGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('N27'))">
+    <NavisVersion>2027</NavisVersion>
+    <DefineConstants>$(DefineConstants);N27</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup Condition="!$(Configuration.Contains('N27'))">
     <PackageReference Include="Chuongmep.Navis.Api.Autodesk.Navisworks.Api" Version="$(NavisVersion).*">
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
     <PackageReference Include="Chuongmep.Navis.Api.Autodesk.Navisworks.Clash" Version="$(NavisVersion).*">
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
+  </ItemGroup>
+  <!-- Chuongmep.Navis.Api packages are not published for 2027 yet; Speckle.Navisworks.API bundles the same Autodesk reference assemblies -->
+  <ItemGroup Condition="$(Configuration.Contains('N27'))">
+    <PackageReference Include="Speckle.Navisworks.API" Version="$(NavisVersion).*">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
   </ItemGroup>
   <ItemGroup>

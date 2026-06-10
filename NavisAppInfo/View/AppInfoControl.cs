@@ -125,11 +125,17 @@ namespace AppInfo
                     case SnoopType.Search:
                         DocumentClashTests clashTests = Application.MainDocument.GetClash().TestsData;
                         if (clashTests == null) return;
-                        if(clashTests.Tests.Count==0) return;
+#if N27
+                        // Navisworks 2027 removed DocumentClashTests.Tests; tests are now organized under a root folder
+                        SavedItemCollection tests = clashTests.Value.TestsRoot.Children;
+#else
+                        SavedItemCollection tests = clashTests.Tests;
+#endif
+                        if(tests.Count==0) return;
                         SavedItem clashResult = null;
-                        foreach (var savedItem1 in clashTests.Tests)
+                        foreach (var savedItem1 in tests)
                         {
-                            var savedItem = (ClashTest) savedItem1;
+                            var savedItem = savedItem1 as ClashTest;
                             if (savedItem == null) continue;
                             SavedItemCollection savedItemCollection = savedItem.Children;
                             switch (_ViewModel.SearchType)

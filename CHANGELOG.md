@@ -1,4 +1,6 @@
 # Changelog
+- 2026-06-10 **1.2.0**
+  - Add support Navisworks 2027
 - 2026-01-06 **1.1.0**
   - Add support Navisworks 2026
 - 2025-03-05 **1.0.5**
