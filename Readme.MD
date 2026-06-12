@@ -41,7 +41,7 @@ This is plugin use parallel with [NavisAddinManager](https://github.com/chuongme
 
 Please follow last release at section [Release](https://github.com/chuongmep/NavisAppInfo/releases/latest)
 
-Support Navisworks Version : 2021, 2022, 2023, 2024, 2025, 2026
+Support Navisworks Version : 2021, 2022, 2023, 2024, 2025, 2026, 2027
 ---
 
 ## Guideline

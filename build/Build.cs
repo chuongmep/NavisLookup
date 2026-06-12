@@ -21,7 +21,14 @@ internal partial class Build : NukeBuild
                .SetProperty("installationPath")
            );
 
-           if (output.Count > 0) return null;
+           if (output.Count > 0)
+           {
+               // Resolve MSBuild from the discovered installation: Nuke 6.x's own resolver
+               // does not recognize Visual Studio versions newer than 2022
+               var msBuildPath = Path.Combine(output.First().Text, "MSBuild", "Current", "Bin", "MSBuild.exe");
+               if (File.Exists(msBuildPath)) return msBuildPath;
+               return null;
+           }
            if (!File.Exists(CustomMsBuildPath)) throw new Exception($"Missing file: {CustomMsBuildPath}. Change the path to the build platform or install Visual Studio.");
            return CustomMsBuildPath;
        });
